@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="atisvenue.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="top-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9"id="first">
+               <div class="navbar">
+  <div class="contaier">
+
+    <div class="navbar-header">
+      <button class="toggle">
+        <i class="fa fa-bars"></i>
+      </button>
+      </div>
+
+      <ul class="nav navcollaps">
+       <li><button class="navbtn">
+      <a href ="E:\OLD\mini\WED - ATIS MINI PROJECT\home\ad1.html">  <i class="fa fa-home"style="color: #46f20c;">&nbsp;&nbsp;</i>Home</a></button>
+    </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atiswed\atiswed.html"><i class="fa fa-heart"style="color: red;">&nbsp;&nbsp;</i>Weddings</a></button>
+        </li>
+       
+        <li><button  class="navbtn">
+        <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvendors\atisvendors.html"><i class="fa fa-users"style="color: #d90cf0">&nbsp;&nbsp;</i>Vendors</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvenue\atisvenue.html"><i class="fa fa-institution"style="color: #0767ba">&nbsp;&nbsp;</i>Venues</a></button>
+        </li>
+       
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atiskart\atiskart.html"><i class="fa fa-shopping-bag"style="color: #bd640b">&nbsp;&nbsp;</i>Shop</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atistrip\atistrip.html"><i class="fa fa-plane"style="color: #02d9f5">&nbsp;&nbsp;</i>Travel</a></button>
+        </li>
+          <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisinvite\atisinvite.html"><i class="fa fa-yelp"style="color: #cc089b">&nbsp;&nbsp;</i>E-Invites</a></button>
+        </li>
+         
+      </ul>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(".toggle").click(function(){
+  $(".navcollaps").toggleClass("show");
+});
+ 
+</script>
+ </div>
+    <div class="col-sm-3"id="first">
+    <ul class="icons">
+     
+      <a href="#">
+      <li class="fa-fa-icons facebook">
+        <i class="fa fa-facebook"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+     
+      <a href="#">
+      <li class="fa-fa-icons instagram">
+        <i class="fa fa-instagram"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons google">
+        <i class="fa fa-google"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons arrow">
+        <i class="fa fa-arrow-down"></i>
+      </li>
+      </a>
+    </ul>
+    
+  </div>
+        </div></div>
+        <hr>
+</div>
+
+
+
+<div class="header" id="myHeader">
+ <div class="container-fluid"style="text-align: center;">
+    <div class="row">
+      <div class="col-sm-4"id="second">
+           <img src="venue.png"style="height:60px;padding: 10px;">
+            </div>
+    <div class="col-sm-5">
+       <select id="citi"placeholder="Select State">Select State
+            <option style="color: black;">Select City</option>
+            <option value="1">Visakhapatnam</option>
+            <option value="2">Vijayawada</option>
+            <option value="3">Guntur</option>
+            <option value="4">Nellore</option>
+            <option value="5">Kurnool</option>
+            <option value="6">Kakinada</option>
+            <option value="7">Rajahmundry</option>
+            <option value="8">Kadapa</option>
+            <option value="9">Tirupati</option>
+            <option value="10">Anantapuram</option>
+            <option value="11">Vizianagaram</option>
+            <option value="12">Eluru</option>
+            <option value="13">Nandyal</option>
+            <option value="14">Ongole</option>
+            <option value="15">Madanapalle</option>
+            <option value="16">Machilipatnam</option>
+            <option value="17">Tenali</option>
+            <option value="18">Proddatur</option>
+            <option value="19">Hindupur</option>
+            <option value="20">Srikakulam</option>
+            <option value="21">Bhimavaram</option>
+            <option value="22">Tadepalligudem</option>
+            <option value="23">Guntakal</option>
+            <option value="24">Dharmavaram<option>
+            <option value="25">Gudivada</option>
+            <option value="26">Narasaraopet</option>
+            <option value="27">Kadiri</option>
+            <option value="28">Tadipatri</option>
+            <option value="29">Mangalagiri</option>
+            
+        </select></label>&nbsp;&nbsp;
+ <button id="sea"><i class="fa fa-map-marker"></i></button> </center>
+    <script>
+        const sea = document.querySelector('#sea');
+        const sb = document.querySelector('#citi')
+        sea.onclick = (event) => {
+            event.preventDefault();
+            // show the selected index
+            alert(sb.selectedIndex);
+        };
+    </script>
+
+    </div>
+    <div class="col-sm-3"id="second">
+       <button type="login" class="button" onclick="openPopup()"id="log">Login</button>
+       <button id="pho"><i class="fa fa-bookmark-o" aria-hidden="true"style="margin-left: 30px;"></i></button>
+       <button type="login" class="button" onclick="openPopup()"id="log"style="margin-left: 30px;">My Libraries <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+    
+     
+      <div class="popup"id="popup">
+        <button type="button" onclick="closePopup()"><i class="fa fa-times" aria-hidden="true"></i>
+</button>
+      </fniv>
+ </div>
+<script type="text/javascript">
+  let pop = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+  </div>
+
+ </div>
+ <br>
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12"style="">
+</div></div></div>
+<script type="text/javascript">
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
+</script>
+
+</div>
+
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<div class="container-fluid">
+  <div class="row"style="background: white;">
+    <div class="col-sm-1"></div>
+        <div class="col-sm-1"></div>
+
+    <div class="col-sm-9">
+    <div class="dropdown">
+      <div class="container">
+        <div class="row"style="background: white;">
+          <div class="col-sm-3"id="sel"><button class="sel2">Venue Type &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button></div>
+          <div class="col-sm-3"id="sel"><button class="sel2">Room Count &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button></div>
+          <div class="col-sm-3"id="sel"><button class="sel2">No-of Guests &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button></div>
+          <div class="col-sm-3"id="sel"><button class="sel2">Rating &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button></div>
+
+                 </div>
+      </div>
+      <div class="col-sm-1"></div>  
+      <div class="dropdown-content">
+  <div class="container">
+        <div class="row"style="background: white;">
+          <div class="col-sm-3"id="sel2">
+            <input type="checkbox" name="">&nbsp;Destination Wedding<br>
+            <input type="checkbox" name="">&nbsp;Resorts<br>
+            <input type="checkbox" name="">&nbsp;Hotels<br>
+            <input type="checkbox" name="">&nbsp;Small Function<br>
+            <input type="checkbox" name="">&nbsp;Party Halls<br>
+            <input type="checkbox" name="">&nbsp;Venues with Rooms<br>
+            <input type="checkbox" name="">&nbsp;Banquet Halls<br>
+            <input type="checkbox" name="">&nbsp;Kalyana Mandapam<br>
+            <input type="checkbox" name="">&nbsp;5 Star Hotels<br>
+
+
+
+          </div>
+          <div class="col-sm-3"id="sel2">
+            <input type="radio" name="room">&nbsp;< 10<br>
+            <input type="radio" name="room">&nbsp;20-50<br>
+            <input type="radio" name="room">&nbsp;51-120<br>
+            <input type="radio" name="room">&nbsp;121-180<br>
+            <input type="radio" name="room">&nbsp;181-250<br>
+            <input type="radio" name="room">&nbsp;251-350<br>
+            <input type="radio" name="room">&nbsp;350-500<br>
+            <input type="radio" name="room">&nbsp;500-750<br>
+            <input type="radio" name="room">&nbsp;750-1000<br>
+
+          </div>
+          <div class="col-sm-3"id="sel2">
+            <input type="checkbox" name="">&nbsp;< 500<br>
+            <input type="checkbox" name="">&nbsp;1000<br>
+            <input type="checkbox" name="">&nbsp;1000-1200<br>
+            <input type="checkbox" name="">&nbsp;1200-1500<br>
+            <input type="checkbox" name="">&nbsp;1500-1700<br>
+            <input type="checkbox" name="">&nbsp;1700-2000<br>
+            <input type="checkbox" name="">&nbsp;2000-2500<br>
+            <input type="checkbox" name="">&nbsp;2500-3000<br>
+            <input type="checkbox" name="">&nbsp;> 3000<br>
+          </div>
+          <div class="col-sm-2"id="sel2">
+            <input type="radio" name="rate">&nbsp;< 4  Rated<br>
+            <input type="radio" name="rate">&nbsp;4 + Rated<br>
+            <input type="radio" name="rate">&nbsp;4.5 Rated<br>
+            <input type="radio" name="rate">&nbsp;5 Rated<br>
+            <input type="radio" name="rate">&nbsp;All Ratings<br>
+
+
+
+          </div>
+
+          <div class="col-sm-1"></div>
+                 </div>
+      </div>
+      <div class="col-sm-12"style="text-align: center;">
+      <button class="reset"><a href="#"style="text-decoration: none;color: black;">Reset</a></button>
+      <button class="reset"><font style="color: red;">View Results</font></button></div>
+  </div>
+
+</div>
+    </div>
+   
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row"style="background: white;">
+    <hr style="margin-top:15px">
+    <div class="col-sm-3">
+      <button class="list1"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;List</button>|
+      <button class="list2"><i class="fa fa-th" aria-hidden="true"></i>&nbsp;Grid</button>
+    </div>
+     <div class="col-sm-5">
+       <input type="text" placeholder=" Search Wedding Venues...." name="search"id="searchbar1">
+      <i class="fa fa-search" id="searchbar2"></i>
+     </div>
+      <div class="col-sm-4"style="text-align: center;">
+              <font style="color:black;margin-left:10px">Sort By :</font>  
+                <button class="new"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>&nbsp;<i class="fa fa-long-arrow-up" aria-hidden="true"></i>&nbsp;New</button>|
+                <button  class="new1"><i class="fa fa-long-arrow-down" aria-hidden="true"></i>&nbsp;<i class="fa fa-long-arrow-up" aria-hidden="true"></i>&nbsp;Trending</button>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid"><div class="row"style="background: white;">
+  <div class="col-sm-12"><hr></div>
+  </div></div>
+   <div class="container-fluid">
+     <div class="row"style="background: white;">
+       <div class="col-sm-3"id="resort">
+        <div class="container">
+          <div class="row">
+              <p style="color:black;font-size: 23px;text-align: right;">The Novotel </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+           <div class="col-sm-12"style=" ">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹850/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1050/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">  
+            
+         <div class="container">
+  <div class="row">
+    <div class="col-sm-12"> 
+<P style="text-align: center;font-size: 18px;">Menu </P>
+<hr style="margin-top:20px;">
+         <div class="container">
+  <div class="row">
+    <div class="col-sm-6"style="">
+      <p style="color:green;font-size: 18px;">Veg</p>
+      <p style="float:right;margin-top: -40px;color: green;font-size: 18px;">₹850 / <i class="fa fa-cutlery"></i></p>
+    
+     
+     <p style=" font-family:Helvetica ;"><button class="dish">Meals</button> 
+      <br>
+      <br>
+            <input type="checkbox" name="">&nbsp;Rice</br>
+            <input type="checkbox" name="">&nbsp;Biriyani (Veg/Panner)</br></p>    
+          <p style="float:right;margin-top: -26%;margin-right: 35px; font-family:Helvetica ;">
+            <button class="dish">Curries</button><br>
+           </br>
+            <input type="checkbox" name="">&nbsp;Dal</br>
+            <input type="checkbox" name="">&nbsp;Potato</br>
+            <input type="checkbox" name="">&nbsp;Bringal</br>
+            <input type="checkbox" name="">&nbsp;Lady Finger</br>
+            <input type="checkbox" name="">&nbsp;Kaju panneer</br>
+            <input type="checkbox" name="">&nbsp;Sambar</br> </p>
+        </div>
+        <div class="col-sm-6"style="border-style: groove;border-top: none;border-right: none;border-bottom: none;">
+          <p style="color:red;font-size: 18px;margin-left: 10px;">Non-Veg</p>
+          <p style="float:right;margin-top: -40px;color: red;font-size: 18px;">1050 / <i class="fa fa-cutlery"style="font-size: 16px;"></i></p>
+         
+     
+     <p style="margin-left:10px;font-family:Helvetica ;">
+      <button class="dish">Meals</button><br>
+        <br>
+        <input type="checkbox" name="Rice">&nbsp;Rice</br>
+        <input type="checkbox" name="">&nbsp;Biriyani (Fry / Dhum)</br>
+        <input type="checkbox" name="">&nbsp;Prawns Biriyani</br>
+      </p>
+        
+       <p style="float:right;margin-top: -32%;margin-right: 20px;font-family:Helvetica ;">
+        <button class="dish">Curries</button></br>
+        <br>
+          <input type="checkbox" name="">&nbsp;Indian Chicken Curry</br>
+          <input type="checkbox" name="">&nbsp;Indian Mutton Curry</br>
+          <input type="checkbox" name="">&nbsp;Fish Curry</br>
+          <input type="checkbox" name="">&nbsp;Bhoti Gongura</br>
+          <input type="checkbox" name="">&nbsp;Prawns Curry</br>
+          <input type="checkbox" name="">&nbsp;Sambar</br> </p>
+          </div>
+        
+            </div>
+            </div>
+          <div class="container">
+          <div class="row">
+             <hr style="margin-top:20px;">
+            <p style="text-align: center;font-size: 18px;margin-top: 10px;font-family:Helvetica ;"></p>
+            <div class="col-sm-3"> 
+            <p style="font-family:Helvetica ;">
+            <button class="dish">BreakFast</button>
+          </br>
+          <br>         
+            <input type="checkbox" name="">&nbsp;Idly Sambar</br>
+            <input type="checkbox" name="">&nbsp;Chapathi</br>
+            <input type="checkbox" name="">&nbsp;Dosa</br>
+            <input type="checkbox" name="">&nbsp;Upma</br>
+            <input type="checkbox" name="">&nbsp;Uttappam</br>
+            <input type="checkbox" name="">&nbsp;Aloo Tikki </br>
+            <input type="checkbox" name="">&nbsp;Tea</br>
+            <input type="checkbox" name="">&nbsp;Coffee</br></p></div>
+            <div class="col-sm-3">
+               <p style="font-family:Helvetica ;">
+              <button class="dish">Desserts</button></br>
+              <br>
+            <input type="checkbox" name="">&nbsp;Rasagulla</br>
+            <input type="checkbox" name="">&nbsp;Apple Halwa</br>
+            <input type="checkbox" name="">&nbsp;Basundi</br>
+            <input type="checkbox" name="">&nbsp;Rasamalai</br>
+            <input type="checkbox" name="">&nbsp;Ladoo</br>
+            <input type="checkbox" name="">&nbsp;Gulab Jamun</br>
+            <input type="checkbox" name="">&nbsp;Shrikand</br>
+            <input type="checkbox" name="">&nbsp;Ice Cream</br>
+          </p>
+            </div>
+            <div class="col-sm-3">
+              <p style="font-family:Helvetica ;">
+            <button class="dish">Beverages</button></br>
+            <br>
+            <input type="checkbox" name="">&nbsp;Cold Coffee</br>
+            <input type="checkbox" name="">&nbsp;Lassi</br>
+            <input type="checkbox" name="">&nbsp;Watermelon Juice</br>
+            <input type="checkbox" name="">&nbsp;Mixed Fruit Juice</br>
+            <input type="checkbox" name="">&nbsp;Pine Apple Juice</br></p>
+          
+            </div>
+            <div class="col-sm-3">
+              <p style="font-family:Helvetica ;">
+              <button class="dish">Raita</button></br>
+              <br>
+            <input type="checkbox" name="">&nbsp;Boondi Raita</br>
+            <input type="checkbox" name="">&nbsp;Onion Mint Raita</br>
+            <input type="checkbox" name="">&nbsp;Green Chilli Raita</br>
+            <input type="checkbox" name="">&nbsp;Masala Raita</br>
+            <input type="checkbox" name="">&nbsp;Plain Curd</br></p>
+             
+            </div>
+            <center>
+               <button class="book1">Checkout</button>
+              <button class="book">Selected List</button>
+             
+            </center>
+          </div>
+          </div>
+
+            </div>
+            </div>
+            </div>
+            </div></font>
+            <div></div></div></div>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">Novotel Visakhapatnam Varun Beach</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;Beach Road<br>
+              530002 Visakhapatnam<br>
+              Andhra Pradesh<br>
+              INDIA<br>
+              GPS:17.710819, 83.316842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;225 sea-facing modern rooms, largest convention center for weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹1,00,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.5
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">25 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+           <a href="https://www.goibibo.com/hotels/novotel-visakhapatnam-varun-beach-hotel-in-visakhapatnam-4638128890178545264/?hquery={%22ci%22:%2220230224%22,%22co%22:%2220230225%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&hmd=975c6d2e78bfd941a6a5205112d391daf4f6bf5e1992c1b62b4d23311c5526ad8997bfd5b87fde77760f7190c10b59b31b2a7788515a00e1e6e79be88fd367a3eab7096048e2ce454f51c03b41181fbc98955b834bb2342dd8560e9d7ddb132800bd2f286d175ee7bf003e2dfd6d3e9deb769b2f30f38eb737812a6bca9201ff8eb1e976b63d4c13915a347768c95a0b9df7a0957f7a256178caa220cac8e553a36cbfbb35ff3102d12287ed4fe8da0f27bf&cc=IN&reviewType=gi&vcid=4436410759289535020"target="blank"> <button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--2-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+      <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">Sun-n-Sand </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹550/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹750/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue2">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">Sun-n-Sand Mumbai Juhu Beach</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that take refreshing dips in the outdoor swimming pool.</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;39 Juhu Beach <br>
+              530002  Juhu<br>
+              Mumbai<br>
+              INDIA
+             </p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;  Mumbai witness the picturesque views of the scenic Juhu Beach and the serene Arabian Sea.
+               <font style="color:red;font-size: 20px;margin-top: 10px;">₹80,000.00 </font>/ Day
+
+            </p>
+
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.0
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">25 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+          <a href="https://www.goibibo.com/hotels/sun-n-sand-hotel-in-mumbai-3042636625007721241/?hquery=%7B%22ci%22:%2220230224%22,%22co%22:%2220230225%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22%7D&hmd=1db6cadc0faaf07175e0039602a45e32a4c7961dabbb46bcb8a6825a8a503bf25fc4a51e36a2c28ac98aaac5dfa849c126457aa911c7552c8eec4815aabc3b12bbe547b97c1e7972d58b9c1e90a262384d35614429ca9f8e22dc928e1990c2d5239e9f2d170848e14dd8ca4c0d08ca3efd8a33a41c62a21ab65d3a408644d931ecf08cf527d259f24d5927cabc9ff1490c4f9082af31893601d4687aae5e6ab1a56be73570a3efa764cf43159ff2f40d31dd&cc=IN&reviewType=gi&vcid=4213513766539949483"target="blank">  <button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--3-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+      <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">Trident Bandra Kurla </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style=" ">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹850/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1050/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br></p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue3">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">Trident Bandra Kurla</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Celebrity treatment with world-class service at Trident Bandra Kurla</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;C-56,Block Bandra Kurla Complex<br>
+              400051 Bandra<br>
+              Mumbai<br>
+              INDIA</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;500 sea-facing modern rooms, largest convention center for Weddings and MICE<br>
+              <font style="color:red;font-size: 20px;margin-top: 10px;">₹1,25,000.00 </font>/ Day
+
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.0
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">25 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+           <a href="https://www.goibibo.com/hotels/trident-bandra-kurla-hotel-in-mumbai-674803750424735040/?hquery={%22ci%22:%2220230224%22,%22co%22:%2220230225%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&hmd=bacf2946593530dc23e02680b3836d0a7c52f40d9455a94ecbe99300d3ac939b9a45f92a44781997c006de1ed15fb6e96b060ac977fb47a01aa9fb313ae28c3481c6b902085bf50a1d5770549a9d3ffa453e82b22630acf1d932bdf3d9d5ccd598699332fc782f35ea10dad28ab606c12a58d09fdb17e07c1cb74fd28452d0f986e83a669b4d009bf32437cf6f33fa0b8a31239cae94a97a85759bff79720c5ebff9beb68c27b988e4ba9cb834fa67a240fb&cc=IN&reviewType=gi&vcid=4213513766539949483"target="blank"><button class="view2">View More</button></a> 
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--4-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+      <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The VITS Resort</p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style="">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹950/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1050/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue4">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">VITS Resort Mumbai</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;G-99 Street<br>
+              400059  Andheri Kurla Road<br>
+              Mumbai<br>
+              INDIA<br>
+              GPS:17.710819, 83.316842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;Modern decor rooms facing the indoor pool or the outside city view makes it a unique design hotel.
+              <br>
+              <font style="color:red;font-size: 20px;">₹50,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">3.5
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            
+            <br>
+            <font style="color:red">10 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.goibibo.com/hotels/vits-mumbai-international-airport-t2-hotel-in-mumbai-6284608982763121491/?hquery={%22ci%22:%2220230224%22,%22co%22:%2220230225%22,%22r%22:%221-2-0%22,%22ibp%22:%22v15%22}&hmd=6d0b93902b9fb5f5548cf908a88ba531762059b9c48085c629cdecc141babf14162deb6056d63aa6210b8107ecbbc07372e7031aaf986343109e68965d8f0c5a4420318a870480082c4dce3b925d06acdf97ec8e086dab736bc7508f48bed47a92f3c45af6949559de2e87626a4f163e8b8ab8445eba709ea7fd350e6dc223ad1c8657d403fe543d02cbcfc6df6da1d736314140653f8d62e4303a14b88f2ed290bb8d2ab6490743f6ca3dce70e44e2b0244612de6e9c0b2810e074c0738586c70999cfeac3a0f940f2054399be6b8eedbebefebb1e13999e34f2b14ee875b4ab6cd7eb65396a94d73bae1d6463df97a6bdb157d1e12c13f2e3306538a6a67a4a387eb7a9596fa8b4d73f30040804ad7c4d2978266deb5a514b2063575104ca84ca678c2cb47134da796cb0cc1d4bd0633165860e19b40dd958dd2be1fcfa79458b28fa32e6c405076e04307418ef33f9be70c3193ac215440fbae4b19&cc=IN&reviewType=gi&vcid=4213513766539949483"target="blank"> <button class="view2">View More</button></a> 
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!---5-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+     <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The Grand Atlantic </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style="">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹1350/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1650/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+             
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue5">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">The Grand Atlantic Resort</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">The Dream Wedding Venue</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;18th-century ,St. Michael’s Church Road<br>
+              569877,Deutsland<br>
+              Hamburg Germany<br>
+              Germany<br>
+              GPS:7.710659, 3.312242</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;1225 Sea-Facing modern rooms, Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹5,00,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">5.0
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">115 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a  href= "https://www.goibibo.com/hotels/the-grand-beach-resort-hotel-in-chennai-7885219936443108886/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--6-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+     <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The Grand Weds Garden </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style="  ">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹750/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹950/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue6">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">The Grand Weds Garden</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;Jntuh Road<br>
+              522111,Hyderabad<br>
+              Telangana<br>
+              INDIA<br>
+              GPS:17.449, 8.316842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp; Modern rooms and Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;margin-top: 10px;">₹90,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.0
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">35 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.goibibo.com/hotels/the-grand-gardens-resort-hotel-in-igatpuri-305541348800016076/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--7-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+      <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The GRT Grand</p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style="">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹950/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1150/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue7">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">The GRT Grand Chennai </p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;120, Sir Thyagaraya road, T.Nagar,<br>
+               600017  Chennai<br>
+              Tamil Nadu,<br>
+              INDIA<br>
+              GPS:17.710819, 83.316842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;Mountain-facing modern rooms, Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹70,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.4
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">15 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.goibibo.com/hotels/grand-chennai-by-grt-hotels-hotel-in-chennai-5417177102089941916/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ <!--8-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+      <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The ENSPO Resort </p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style="">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹450/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹750/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue8">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">The ENSPO Resort</p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;4th Floor, Museum Rd, opp. SBI Head Office<br>
+               560001   Bengaluru,<br>
+               Karnataka,<br>
+              INDIA<br>
+              GPS:710.819, 83.6842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp; City Centered Resort , Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹60,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">3.5
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">50 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.ensporoyalopus.com/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--9-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+     <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">Goldfinch Retreat</p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style=" ">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹850/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1250/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+            <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue9">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">Goldfinch Retreat Bengaluru </p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;
+              Goldfinch Retreat<br>
+              32467 ,Bengaluru,<br>
+              Karnataka<br>
+              INDIA<br>
+              GPS:17.710819, 83.316842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;City-facing modern rooms, Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹1,00,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.7
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">125 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.goibibo.com/hotels/goldfinch-retreat-hotel-in-bangalore-8936606346167158691/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--10-->
+ <div class="container-fluid">
+   <div class="row"style="background: white;">
+    <div class="col-sm-3"id="resort">
+      <div class="container">
+        <div class="row">
+            <p style="color:black;font-size: 23px;text-align: right;">The MoonGate</p><div class="bookmarka"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+            <div class="bookmark-content">Add to Fav</div></div>
+
+           <div class="col-sm-12"style=" ">
+                        <p>
+             <i class="fa fa-cutlery" aria-hidden="true"style="color: orange;"></i> &nbsp;<font style="font-family:Helvetica;font-size: 16px;color: darkred;">Coquere</font><br>
+             <hr style="width: 90px;">
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: green;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px;">Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:green;font-family:Helvetica;">₹1050/-</font> <br>
+            <i class="fa fa-dot-circle-o" aria-hidden="true"style="color: red;"></i>&nbsp;&nbsp;<font style="font-family:Helvetica;font-size: 14px; ">Non-Veg</font>
+            <font style="float: right;margin-left: 3px;font-size: 9px;margin-top: 7px;">1</font><font style="float:right;color:red;font-family:Helvetica;">₹1250/- </font><br>
+            <font style="font-size: 14px;font-family:Helvetica;margin-top: 10px;"><i class="fa fa-list-alt" aria-hidden="true"style="color: blue"></i>&nbsp;
+            <a href="#popup1"style="color:black;text-decoration: none;font-family:Helvetica;">
+            View Dishes
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div></font><br> </p>
+            <p>
+            <font style="font-family:Helvetica;font-size: 16px;color: darkred;margin-top: 10px;"><i class="fa fa-check-square-o" aria-hidden="true"style="color: orange;"></i>
+            &nbsp;On Site</font><br>
+                <hr style="width: 90px;">
+              <i class="fa fa-info-circle" aria-hidden="true"style="color: red;"></i>&nbsp;
+              <font style="font-family:Helvetica;font-size: 14px;">Services
+              <button style="width:80px;border-radius:20px;background:blueviolet;border-color: transparent;font-family:Helvetica;font-size: 13px;float: right;color: white;font-weight: bold;">24-Hours</button></font><br>
+            
+            
+           </p>
+           </div>
+           
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-sm-9"id="resort">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-sm-5"id="venue10">
+            
+           </div>
+           <div class="col-sm-4"style="">
+              <p style="font-size: 23px;font-family:  serif;">The MoonGate </p>
+              <p style="font-family: Helvetica;font-size: 14px;margin-top: -11px;color: #545151; ;">Hotel that makes every moment matter</p>
+              <p style="color: #545151;font-family: Helvetica;font-size: 14px;margin-top: -11px;">
+              <i class="fa fa-map-marker"style="color:red"></i>&nbsp;Moongate Events Venue<br>
+              Behind Decathlon Anubhava, Chikkajala<br>
+              Bangalore<br>
+              INDIA<br>
+              GPS:71.0819, 31.6842</p>
+             <button class="indoor">InDoor</button>
+             <button class="indoor1">OutDoor</button>
+             <button class="indoor1">PoolSide</button>
+             <button class="indoor1"><a href=""style="color:#636060;">More</a></button>
+
+             <br>
+             <p style="margin-top:10px;font-family:Helvetica;font-size: 14px;color: #545151;"> 
+             
+              <i class="fa fa-check-circle-o" aria-hidden="true"style="color: green"></i>&nbsp;Seas-facing modern rooms, Largest convention center for Weddings and MICE
+              <br>
+              <font style="color:red;font-size: 20px;">₹1,20,000.00 </font>/ Day
+            </p>
+              
+             </div>
+             <div class="col-sm-3"style="border-style:">
+              <font style="color:darkred;float: right;margin-top:10px;">+91 7095631376&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"style="margin-top: 6px;color: green;float:right;"></font></i>
+              <font style="color:green;float: right;margin-top:10px;">Atiswed@gmail.com&nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"style="margin-top: 5px;float: right;color: darkred"></font></i>
+              <p style="float: right;margin-top:10px;">4.0
+            
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star" aria-hidden="true"style="color:orange"></i>
+            <i class="fa fa-star-o" aria-hidden="true"style="color:orange"></i>
+            <br>
+            <font style="color:red">65 +<font style="color:darkblue;"> Reviews</font> </font>
+            </p>
+
+            <div class="col-sm-12"style="margin-top: 105%;">
+           <i class="fa fa-gratipay" aria-hidden="true"id="heart"></i>&nbsp;
+            <a href="#popup1">
+            <button class="view1">Send Message</button>
+            </a>
+            <div id="popup1" class="overlay">
+            <div class="dialog">
+            <a class="close" href="#">&times;</a>
+            <div class="content">     
+            </div>
+            </div>
+            </div>
+            <a href="https://www.goibibo.com/hotels-international/moongate-and-suites-hotel-in-abeokuta-south-5348985378215193190/"target="blank"><button class="view2">View More</button></a>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+     
+   </div>
+ </div>
+
+
+
+
+</body>
+</html>

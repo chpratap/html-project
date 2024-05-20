@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="atiskart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="top-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9"id="first">
+                <div class="navbar">
+  <div class="contaier">
+
+    <div class="navbar-header">
+      <button class="toggle">
+        <i class="fa fa-bars"></i>
+      </button>
+      </div>
+
+      <ul class="nav navcollaps">
+       <li><button class="navbtn">
+      <a href ="E:\OLD\mini\WED - ATIS MINI PROJECT\home\ad1.html">  <i class="fa fa-home"style="color: #46f20c;">&nbsp;&nbsp;</i>Home</a></button>
+    </li>
+        <li><button class="navbtn">
+          <a href ="E:\OLD\mini\WED - ATIS MINI PROJECT\atiswed\atiswed.html"><i class="fa fa-heart"style="color: red;">&nbsp;&nbsp;</i>Weddings</a></button>
+        </li>
+       
+        <li><button  class="navbtn">
+        <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvendors\atisvendors.html"><i class="fa fa-users"style="color: #d90cf0">&nbsp;&nbsp;</i>Vendors</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvenue\atisvenue.html"><i class="fa fa-institution"style="color: #0767ba">&nbsp;&nbsp;</i>Venues</a></button>
+        </li>
+       
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atiskart\atiskart.html"><i class="fa fa-shopping-bag"style="color: #bd640b">&nbsp;&nbsp;</i>Shop</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atistrip\atistrip.html"><i class="fa fa-plane"style="color: #02d9f5">&nbsp;&nbsp;</i>Travel</a></button>
+        </li>
+          <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisinvite\atisinvite.html"><i class="fa fa-yelp"style="color: #cc089b">&nbsp;&nbsp;</i>E-Invites</a></button>
+        </li>
+         
+      </ul>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(".toggle").click(function(){
+  $(".navcollaps").toggleClass("show");
+});
+ 
+</script>
+ </div>
+    <div class="col-sm-3"id="first">
+    <ul class="icons">
+     
+      <a href="#">
+      <li class="fa-fa-icons facebook">
+        <i class="fa fa-facebook"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+     
+      <a href="#">
+      <li class="fa-fa-icons instagram">
+        <i class="fa fa-instagram"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons google">
+        <i class="fa fa-google"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons arrow">
+        <i class="fa fa-arrow-down"></i>
+      </li>
+      </a>
+    </ul>
+    
+  </div>
+        </div></div>
+        <hr>
+</div>
+
+
+
+<div class="header" id="myHeader">
+ <div class="container-fluid"style="text-align: center;">
+    <div class="row">
+      <div class="col-sm-4"id="second">
+           <img src="kart.png"style="height:60px;padding: 10px;">
+            </div>
+    <div class="col-sm-4">
+
+
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2"id="second">
+      <button id="pho"><i class="fa fa-shopping-bag"id=""></i></button>
+      <button style="color:white;float: right;margin-top: 15px;">|</button>
+      <button type="login" class="button" onclick="openPopup()"id="log">Wishlist</button>
+
+      <div class="popup"id="popup">
+      <iframe src="https://giphy.com/embed/Mjl0BsAgMGYTe"style="height: 130px;width: 130px;"></iframe><p style="margin: 10px;color: red;">Your Wishlist Is Empty</p>
+        <button type="button" onclick="closePopup()">
+
+
+          <i class="fa fa-times" aria-hidden="true"></i>
+</button>
+      </form>
+      </div>
+ </div>
+<script type="text/javascript">
+  let pop = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+  </div>
+
+ </div>
+ <br>
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12"style="">
+</div></div></div>
+<script type="text/javascript">
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
+</script>
+
+</div>
+
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12"style="background: white;">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9"></div>
+        <div class="col-sm-3"></div>
+      </div> 
+      </div>
+  <div class="container">
+  <div class="row"style="background: white;">
+  
+  <div class="col-sm-3"id="block3">                
+    <img src="1m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+  <p>Hand Embroidered Art Silk Sherwani in Light Beige</p>
+  <h6 style="text-decoration: line-through;">₹35,700.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;"> ₹26,775.00</h6>
+  <p style="color: #8a1007;">25% Off &nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="4m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Hand Embroidered Art Silk Straight Sherwani in Black</p>
+  <h6 style="text-decoration: line-through;">₹7,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹5,437.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+       
+   </div>
+
+    <div class="col-sm-3"id="block3">
+
+    <img src="3m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Cotton Silk Kurta Set in Dark Pink</p>
+  <h6 style="text-decoration: line-through;">₹4,700.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;"> ₹3,525.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    
+    </div>
+        <div class="col-sm-3"id="block3">
+    <img src="5m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Solid Color Dupion Silk Kurta Set in Dark Green</p>
+  <h6 style="text-decoration: line-through;">₹2,950.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;"> ₹2,212.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+       </div>
+      </div>
+    <div class="row">
+    <div class="col-sm-3"id="block3">
+    <img src="6m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Jacquard Kurta Set in Navy Blue</p>
+  <h6 style="text-decoration: line-through;">₹3,700.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,775.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="7m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Jacquard Asymmetric Sherwani in Navy Blue</p>
+  <h6 style="text-decoration: line-through;">₹6,000.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;"> ₹4,500.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+
+   </div>
+    <div class="col-sm-3"id="block3">
+    <img src="8m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Jacquard Dhoti Sherwani in Teal Green</p>
+  <h6 style="text-decoration: line-through;">₹5,450.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,087.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+   <div class="col-sm-3"id="block3">
+    <img src="9m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Tucked CottonKurta in Navy Blue</p><br>
+  <h6 style="text-decoration: line-through;">₹3,050.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,287.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="10m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Collar Cotton Kurta Set in Dark Olive Green</p>
+  <h6 style="text-decoration: line-through;">₹5,050.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,787.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="11m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Brocade Sherwani in Light Pink</p><br>
+  <h6 style="text-decoration: line-through;">₹8,150.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹6,112.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+
+
+    <div class="col-sm-3"id="block3">
+      <img src="12m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Brocade Sherwani in Cream</p><br>
+  <h6 style="text-decoration: line-through;">₹24,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹18,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+          <img src="13m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Dupion Silk Jacquard Kurta in Olive Green</p>
+  <h6 style="text-decoration: line-through;">₹3,950.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,962.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+       </div>
+      </div>
+
+<div class="row">
+  <div class="col-sm-3"id="block3">
+      <img src="14m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Cotton Kurta Set in Off White</p><br>
+  <h6 style="text-decoration: line-through;">₹10,837.50</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹5,200.0</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+      <img src="15m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Jacquard Asymmetric Sherwani in Black</p>
+  <h6 style="text-decoration: line-through;">₹14,450.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹10,837.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+    <div class="col-sm-3"id="block3">
+        <img src="16m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Jacquard Kurta Set in Light Teal Green</p>
+  <h6 style="text-decoration: line-through;">₹2,700.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,025.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+        <div class="col-sm-3"id="block3">
+            <img src="17m.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Golden Printed Dupion Silk Side Slit Dhoti Kurta in Navy Blue</p>
+  <h6 style="text-decoration: line-through;">₹4,350.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,262.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+       </div>
+      </div>
+
+
+
+
+<div class="row">
+  <div class="col-sm-3"id="block3">
+     <img src="1f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Georgette Silk Saree in Mustard</p><br>
+  <h6 style="text-decoration: line-through;">₹6,500.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,875.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+  </div>
+   <div class="col-sm-3"id="block3">
+     <img src="2f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Georgette Silk Saree in Light Beige</p>
+  <h6 style="text-decoration: line-through;">₹6,500.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,875.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+    <div class="col-sm-3"id="block3">
+       <img src="3f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Saree in Multicolor</p><br>
+  <h6 style="text-decoration: line-through;">₹7,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹5,437.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+        <div class="col-sm-3"id="block3">
+           <img src="5f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Mustard</p><br>
+  <h6 style="text-decoration: line-through;">₹6,350.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,762.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+     <img src="4f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Satin Georgette saree in Mustard</p>
+  <h6 style="text-decoration: line-through;">₹9,800.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹7,350.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+  </div>
+   <div class="col-sm-3"id="block3">
+     <img src="6f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Mustard</p><br>
+  <h6 style="text-decoration: line-through;">₹5,500.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,125.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+    <div class="col-sm-3"id="block3">
+       <img src="7f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Pastel Green</p><br>
+  <h6 style="text-decoration: line-through;">₹5,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,100.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+        <div class="col-sm-3"id="block3">
+           <img src="8f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Light Peach</p><br>
+  <h6 style="text-decoration: line-through;">₹7,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹5,437.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+     <img src="9f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Satin Georgette saree in Mustard</p>
+  <h6 style="text-decoration: line-through;">₹9,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹8,400.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+  </div>
+   <div class="col-sm-3"id="block3">
+     <img src="10f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Dark Fuchisa</p><br>
+  <h6 style="text-decoration: line-through;">₹5,750.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,312.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+    <div class="col-sm-3"id="block3">
+       <img src="11f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Fuchisa</p>
+    <br>
+  <h6 style="text-decoration: line-through;">₹1,850.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹1,387.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+        <div class="col-sm-3"id="block3">
+           <img src="12f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven art Silk Saree in Pink</p><br>
+  <h6 style="text-decoration: line-through;">₹10,750.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹8,062.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+     <img src="13f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Embroidered Organza Saree in Violet</p><br>
+  <h6 style="text-decoration: line-through;">₹4,600.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,450.00</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+   <div class="col-sm-3"id="block3">
+     <img src="14f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Kanchipuram Silk Saree in Maroon</p><br>
+  <h6 style="text-decoration: line-through;">₹7,200.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹5,400.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+   </div>
+    <div class="col-sm-3"id="block3">
+       <img src="15f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Woven Art Silk Saree in Pink and Yellow</p><br>
+  <h6 style="text-decoration: line-through;">₹3,250.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,437.50</h6>
+  <p style="color: #8a1007;">25% Off<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+    </div>
+        <div class="col-sm-3"id="block3">
+           <img src="16f.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Banarasi Saree in Pink</p><br>
+  <h6 style="text-decoration: line-through;">₹5,500.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,125.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+        </div>
+      </div>
+
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="1j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Stone Studded Choker Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹2,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹1,412.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="2j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Golden Polished Kemp Stone Studded Necklace Set</p>
+  <h6 style="text-decoration: line-through;">₹3,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,412.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+    <div class="col-sm-3"id="block3">
+      <img src="3j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Kundan Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹4,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,400.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+          <img src="4j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Oxidised Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹1,750.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹1,412.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+        </div>
+      </div>
+
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="5j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Oxidised Temple Long Necklace Set</p>
+  <h6 style="text-decoration: line-through;">₹3,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,600.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="6j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Choker Necklace Set </p><br>
+  <h6 style="text-decoration: line-through;">₹2,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹1,812.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+    <div class="col-sm-3"id="block3">
+      <img src="7j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> </p><br>
+  <h6 style="text-decoration: line-through;">₹24,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹18,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+          <img src="8j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Stone Studded Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹3,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,450.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="9j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Brocade Sherwani in Cream</p><br>
+  <h6 style="text-decoration: line-through;">₹24,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹18,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="10j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Kundan Choker Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹5,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹4,600.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+    <div class="col-sm-3"id="block3">
+      <img src="11j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹8,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹7,550.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+          <img src="12j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Choker Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹2,750.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹1,950.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="13j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Kundan Bridal set</p><br>
+  <h6 style="text-decoration: line-through;">₹11,600.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹8,700.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="14j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Kundan Choker Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹3,350.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹2,512.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+    <div class="col-sm-3"id="block3">
+      <img src="15j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Gold Polished Stone Studded Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹5,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,787.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+    <img src="16j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p></p><br>
+  <h6 style="text-decoration: line-through;">₹4,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,750.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+</div>
+      </div>
+<div class="row">
+  <div class="col-sm-3"id="block3">
+    <img src="17j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Oxidised Necklace Set</p><br>
+  <h6 style="text-decoration: line-through;">₹4,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹3,750.00</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+  </div>
+   <div class="col-sm-3"id="block3">
+    <img src="18j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Brocade Sherwani in Cream</p><br>
+  <h6 style="text-decoration: line-through;">₹22,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹17,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+   </div>
+    <div class="col-sm-3"id="block3">
+    <img src="19j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p> Brocade Sherwani in Cream</p><br>
+  <h6 style="text-decoration: line-through;">₹34,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹28,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp; | &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+    </div>
+        <div class="col-sm-3"id="block3">
+    <img src="20j.jpg"style="height: 390px;box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.1);">
+    <p>Stone Studded Temple Peacock Style Necklace Set</p>
+  <h6 style="text-decoration: line-through;">₹14,550.00</h6>
+  <h6 style="color:#f71302;font-weight: bold;margin-top: -10%;margin-left: 29%;">₹10,412.50</h6>
+  <p style="color: #8a1007;">25% Off&nbsp;&nbsp;| &nbsp;&nbsp;Ready To Ship<br> </p><p style="color:green;margin-top:-5%"> Deal of the Day</p>
+  <a href=""><i class="fa fa-gratipay" aria-hidden="true"id="heart"></i></a>
+    <a href=""><i class="fa fa-shopping-cart"id="kart"></i></a>
+    <button class="but2"> Order Now</button>
+
+        </div>
+      </div>
+
+</div>
+</div>
+</div>
+
+    </div>
+    <!--demo-->
+  </div>
+</div>
+</body>
+</html>

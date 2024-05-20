@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="atisvendor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+</head>
+<body>
+
+<div class="top-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9"id="first">
+        <div class="navbar">
+  <div class="contaier">
+
+    <div class="navbar-header">
+      <button class="toggle">
+        <i class="fa fa-bars"></i>
+      </button>
+      </div>
+
+      <ul class="nav navcollaps">
+       <li><button class="navbtn">
+      <a href ="E:\OLD\mini\WED - ATIS MINI PROJECT\home\ad1.html">  <i class="fa fa-home"style="color: #46f20c;">&nbsp;&nbsp;</i>Home</a></button>
+    </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atiswed\atiswed.html"><i class="fa fa-heart"style="color: red;">&nbsp;&nbsp;</i>Weddings</a></button>
+        </li>
+       
+        <li><button  class="navbtn">
+        <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvendors\atisvendors.html"><i class="fa fa-users"style="color: #d90cf0">&nbsp;&nbsp;</i>Vendors</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisvenue\atisvenue.html"><i class="fa fa-institution"style="color: #0767ba">&nbsp;&nbsp;</i>Venues</a></button>
+        </li>
+       
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atiskart\atiskart.html"><i class="fa fa-shopping-bag"style="color: #bd640b">&nbsp;&nbsp;</i>Shop</a></button>
+        </li>
+        <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atistrip\atistrip.html"><i class="fa fa-plane"style="color: #02d9f5">&nbsp;&nbsp;</i>Travel</a></button>
+        </li>
+          <li><button class="navbtn">
+          <a href="E:\OLD\mini\WED - ATIS MINI PROJECT\atisinvite\atisinvite.html"><i class="fa fa-yelp"style="color: #cc089b">&nbsp;&nbsp;</i>E-Invites</a></button>
+        </li>
+         
+      </ul>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(".toggle").click(function(){
+  $(".navcollaps").toggleClass("show");
+});
+ 
+</script>
+ </div>
+    <div class="col-sm-3"id="first">
+    <ul class="icons">
+     
+      <a href="#">
+      <li class="fa-fa-icons facebook">
+        <i class="fa fa-facebook"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+     
+      <a href="#">
+      <li class="fa-fa-icons instagram">
+        <i class="fa fa-instagram"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons google">
+        <i class="fa fa-google"></i>
+      </li>
+      </a>&nbsp;&nbsp;
+      <a href="#">
+      <li class="fa-fa-icons arrow">
+        <i class="fa fa-arrow-down"></i>
+      </li>
+      </a>
+    </ul>
+    
+  </div>
+        </div></div>
+        <hr>
+</div>
+
+
+
+<div class="header" id="myHeader">
+ <div class="container-fluid"style="text-align: center;">
+    <div class="row">
+      <div class="col-sm-4"id="second">
+           <img src="vendor.png"style="height:60px;padding: 10px;">
+            </div>
+    <div class="col-sm-5">
+      
+    </div>
+    <div class="col-sm-3"id="second">
+       <button type="login" class="button" onclick="openPopup()"id="log">Login</button>
+       <button id="pho"><i class="fa fa-bookmark-o" aria-hidden="true"style="margin-left: 30px;"></i></button>
+       <button type="login" class="button" onclick="openPopup()"id="log"style="margin-left: 30px;">My Libraries <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+    
+     
+      <div class="popup"id="popup">
+        <button type="button" onclick="closePopup()"><i class="fa fa-times" aria-hidden="true"></i>
+</button>
+      </fniv>
+ </div>
+<script type="text/javascript">
+  let pop = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+  </div>
+
+ </div>
+ <br>
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12"style="">
+</div></div></div>
+<script type="text/javascript">
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+  }
+</script>
+
+</div>
+
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="container-fluid">
+  <div class="row"style="background: white;">
+      <div class="container-fluid">
+       <div class="row">
+         <div class="col-sm-3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12"id="vendor1"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#wed1"style="color: black;font-family: Helvetica;">Wedding Photography</a> </p>
+              <div class="dropdown-content">
+                <li><a href="#wed1"style="text-decoration: none;color: black;">Wedding-Video / Cinema</a></li>
+                <li><a href="#wed1"style="text-decoration: none;color: black;">Pre-Wedding Shoot</a></li>
+                <li><a href="#wed1"style="text-decoration: none;color: black;">Wedding Photoshoots</a></li>
+                <li><a href="#wed1"style="text-decoration: none;color: black;">More</a></li>
+              </div>
+            </div></div>
+            <div class="col-sm-12"id="vendor2"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#mehndi"style="text-decoration: none;color: black;font-family: Helvetica;">Bridal Mehndi Designs</a> </p>
+              <div class="dropdown-content">
+               <li><a href="#mehndi"style="text-decoration: none;color: black;">Arabic</a></li>
+                <li><a href="#mehndi"style="text-decoration: none;color: black;">Simple</a></li>
+                <li><a href="#mehndi"style="text-decoration: none;color: black;">Unique </a></li>
+                <li><a href="#mehndi"style="text-decoration: none;color: black;">More</a></li>
+            </div></div></div>
+            <div class="col-sm-12"id="vendor3"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#makeup"style="text-decoration: none;color: black;font-family: Helvetica;">Makeup Artists</a></p>
+            <div class="dropdown-content">
+               <li><a href="#makeup"style="text-decoration: none;color: black;">Bridal Makeup</a></li>
+                <li><a href="#makeup"style="text-decoration: none;color: black;">Bridal Hair Style</a></li>
+                <li><a href="#makeup"style="text-decoration: none;color: black;">Mehndi</a></li>
+                <li><a href="#makeup"style="text-decoration: none;color: black;">More</a></li>
+            </div></div></div>
+            <div class="col-sm-12"id="vendor4"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#decor"style="text-decoration: none;color: black;font-family: Helvetica;">Decor & Ideas</a></p>
+              <div class="dropdown-content"> 
+                <li><a href="#decor"style="text-decoration: none;color: black;">Bridal Entry</a></li>
+                <li><a href="#decor"style="text-decoration: none;color: black;">Groom Entry</a></li>
+                <li><a href="#decor"style="text-decoration: none;color: black;">Wedding Games</a></li>
+                <li><a href="#decor"style="text-decoration: none;color: black;">Mores</a></li>
+              </div></div></div>
+            <div class="col-sm-12"id="vendor5"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#music"style="text-decoration: none;color: black;font-family: Helvetica;">Music | Dance</a></p>
+              <div class="dropdown-content">
+                 <li><a href="#music"style="text-decoration: none;color: black;">Sangeeth Choreographer</a></li>
+                <li><a href="#music"style="text-decoration: none;color: black;">Wedding Entertainment</a></li>
+                <li><a href="#music"style="text-decoration: none;color: black;">Dj's</a></li>
+                <li><a href="#music"style="text-decoration: none;color: black;">More</a></li>
+              </div></div></div>
+            <div class="col-sm-12"id="vendor6"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#catering"style="text-decoration: none;color: black;font-family: Helvetica;">Catering Services</a></p>
+              <div class="dropdown-content">
+                 <li><a href="#catering"style="text-decoration: none;color: black;">Chaat & Food Stalls</a></li>
+                <li><a href="#catering"style="text-decoration: none;color: black;">Home-Catering</a></li>
+                <li><a href="#catering"style="text-decoration: none;color: black;">Bartenders</a></li>
+                <li><a href="#catering"style="text-decoration: none;color: black;">More</a></li>
+              </div></div></div>
+            <div class="col-sm-12"id="vendor7"><div class="dropdown">
+              <p style="margin-top:5px;"><a href="#pandit"style="text-decoration: none;color: black;font-family: Helvetica;">Pandit</a></p>
+              <div class="dropdown-content">
+                 <li><a href="#pandit"style="text-decoration: none;color: black;">Pandits</a></li>
+                <li><a href="#pandit"style="text-decoration: none;color: black;">Priests </a></li>
+                <li><a href="#pandit"style="text-decoration: none;color: black;">Maulvis</a></li>
+                <li><a href="#pandit"style="text-decoration: none;color: black;">More</a></li>
+              </div></div></div>
+<p style="margin-top:12px;font-family: Helvetica;">Complete  Your Wedding Team</p>
+<button class="team">PhotoBooth</button>
+<button class="team">Tent House</button>
+<button class="team">Caterers</button>
+<button class="team">Party Places</button>
+<button class="team">Decorators</button>
+<button class="team">Promotions</button>
+
+
+          </div>
+        </div>
+      </div>
+       
+      
+
+<div class="col-sm-9"id="bannerx">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"id="vendor9">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8"id="banner">
+            jkjjk
+            </div>
+      <div class="col-sm-4">
+        <div class="col-sm-12"></div>
+        <div class="col-sm-12"id="banner12"> <p style="margin:10px;font-family: Helvetica;font-size: 15px;color: black;">"A strong team of trustworthy, experienced wedding professionals will help your wedding run smoothly without any bumps....." </p> </div>
+        <div class="col-sm-12"style="text-align: right;"><button class="explorex">Explore Now</button></div>
+      </div>
+          </div>
+        </div>
+      </div></div></div>
+      </div></div>
+
+
+
+
+
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="wed1">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Wedding Photographers</p>
+            <p style="font-family: Helvetica;">Discover the top Photographers Near You ,Who Captures Your Wedding Most Precious Moments</p>
+
+      <button class="option1">Find Photographers</button></div>
+  </div>
+  <p style="font-size:20px;margin-top: 20px;">Photographers By Region</p>
+  <button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Hyderabad</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Chennai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Kerala</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Banglore</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Vizag</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Mumbai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Goa</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Odisha</a></button>
+</div>
+<div class="container">
+  <div class="row"style="margin-top: 20px;">
+    <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">zas</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">qsqs</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">sqs</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">sqsq</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">qss</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">nsnan</div>
+  </div>
+</div>
+<!--2--->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="mehndi">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Bridal Mehndi Designs</p>
+            <p style="font-family: Helvetica;">"Mehndi is the Best jewellery for Every Bride"Discover the top Mehndi Artists Near You </p>
+
+      <button class="option1">Find Designs</button></div>
+
+  </div>
+   <p style="font-size:20px;margin-top: 20px;">Designs By Artists</p>
+  <button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Hyderabad</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Chennai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Kerala</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Banglore</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Vizag</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Mumbai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Goa</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Odisha</a></button>
+</div>
+<div class="container">
+  <div class="row"style="margin-top: 20px;">
+    <div class="col-sm-3"id="Photography">
+      <img src="m1.jpeg"style="height: 320px;width: 250px;">
+    </div>
+     <div class="col-sm-3"id="Photography">
+     <img src="m2.jpeg"style="height: 320px;width: 250px;">
+     </div>
+      <div class="col-sm-3"id="Photography">
+    <img src="m3.jpeg"style="height: 320px;width: 250px;">
+
+      </div>
+     <div class="col-sm-3"id="Photography">
+    <img src="m4.jpeg"style="height: 320px;width: 250px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography">
+    <img src="m5.jpeg"style="height: 320px;width: 250px;">
+
+      </div>
+     <div class="col-sm-3"id="Photography">
+    <img src="m6.jpeg"style="height: 320px;width: 250px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography">      
+    <img src="m7.jpeg"style="height: 320px;width: 250px;">
+</div>
+     <div class="col-sm-3"id="Photography">
+    <img src="m8.jpeg"style="height: 320px;width: 250px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography">
+    <img src="m9.jpeg"style="height: 320px;width: 250px;">
+
+      </div>
+     <div class="col-sm-3"id="Photography">
+    <img src="m13.jpeg"style="height: 320px;width: 250px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography">
+    <img src="m11.jpeg"style="height: 320px;width: 250px;">
+
+      </div>
+     <div class="col-sm-3"id="Photography">
+    <img src="m12.jpeg"style="height: 320px;width: 250px;">
+
+     </div>
+  </div>
+</div>
+<!--3-->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="makeup">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Make Up</p>
+            <p style="font-family: Helvetica;">"All Women are Pretty Without Makeup -- But With The Right Makeup The can be Pretty Powerful"Discover The Top Artists</p>
+
+      <button class="option1">Find Artists</button></div>
+      <div class="col-sm-12"style="margin-top: 10px;">
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Hyderabad</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Chennai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Goa</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Odisha</a></button>
+<br>
+</div>
+<div class="col-sm-12"style="margin-top: 10px;">
+<button class="team0">AirBrush MakeUp</a></button>
+<button class="team0">Regular MakeUp</a></button>
+<br></div>
+<div class="col-sm-12"style="margin-top: 10px;">
+<button class="team1">Lessthan-₹20,000</a></button>
+<button class="team1">₹20,000 - ₹30,000</a></button>
+<button class="team1">₹30,000 - ₹40,000</a></button>
+<button class="team1">₹40,000 - ₹50,000</a></button>
+<button class="team1">₹50,000 - ₹60,000</a></button>
+</div>
+  </div>
+</div>
+<div class="container">
+  <div class="row"style="margin-top: 20px;">
+    <div class="col-sm-3"id="Photography1">
+         <img src="a7.jpg"style="height: 210px;">
+    </div>
+     <div class="col-sm-3"id="Photography1">
+         <img src="a2.jpg"style="height: 210px;">
+ 
+     </div>
+      <div class="col-sm-3"id="Photography1">
+         <img src="a10.jpg"style="height: 210px;">
+
+      </div>
+     <div class="col-sm-3"id="Photography1">
+         <img src="a11.jpg"style="height: 210px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography1">
+         <img src="a5.jpeg"style="height: 210px;">
+ 
+      </div>
+     <div class="col-sm-3"id="Photography1">
+         <img src="a6.jpeg"style="height: 210px;">
+  
+     </div>
+      <div class="col-sm-3"id="Photography1">
+    <img src="a1.jpg"style="height: 210px;">
+        
+      </div>
+     <div class="col-sm-3"id="Photography1">
+    <img src="a8.jpg"style="height: 210px;">
+
+     </div>
+      <div class="col-sm-3"id="Photography1">
+    <img src="a9.jpg"style="height: 210px;">
+    
+     </div>
+      <div class="col-sm-3"id="Photography1">
+    <img src="a4.jpg"style="height: 210px;">
+    
+     </div>
+      <div class="col-sm-3"id="Photography1">
+    <img src="a3.jpg"style="height: 210px;">
+    
+     </div>
+      <div class="col-sm-3"id="Photography1">
+        <center>
+    <img src="a12.jpg"style="height: 210px;">
+    
+     </div>
+     
+</div>
+<!--4-->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="decor">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Decor & Ideas</p>
+            <p style="font-family: Helvetica;">"Dreamy Wedding Decor--The Only Thing That Can Top It Is Seeing The Happy Couple"Discover The Top Decors  Near You </p>
+
+      <button class="option1">Find Decorators</button></div>
+       <p style="font-size:20px;margin-top: 20px;">Decor By Tradition</p>
+  <button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Hyderabad</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Chennai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Kerala</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Banglore</a></button>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography1x"></div>
+     <div class="col-sm-4"id="Photography2x"></div>
+      <div class="col-sm-4"id="Photography3x"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography4x"></div>
+     <div class="col-sm-4"id="Photography5x"></div>
+      <div class="col-sm-4"id="Photography6x"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography7x"></div>
+     <div class="col-sm-4"id="Photography8x"></div>
+      <div class="col-sm-4"id="Photography9x"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography10x"></div>
+     <div class="col-sm-4"id="Photography11x"></div>
+      <div class="col-sm-4"id="Photography12x"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+
+<!--5-->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="music">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Music | Dance</p>
+            <p style="font-family: Helvetica;">Discover The Greatest Wedding Music Groups & Choreographers Near You to Serenade Your Wedding</p>
+
+      <button class="option1">Find Choreographers</button></div>
+       <p style="font-size:20px;margin-top: 20px;">Dance | Music By Region</p>
+  <button class="team">Hyderabad</a></button>
+<button class="team">Chennai</a></button>
+<button class="team">Kerala</a></button>
+<button class="team">Banglore</a></button>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography1y"></div>
+     <div class="col-sm-4"id="Photography2y"></div>
+      <div class="col-sm-4"id="Photography3y"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography4y"></div>
+     <div class="col-sm-4"id="Photography5y"></div>
+      <div class="col-sm-4"id="Photography6y"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography7y"></div>
+     <div class="col-sm-4"id="Photography8y"></div>
+      <div class="col-sm-4"id="Photography9y"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography10y"></div>
+     <div class="col-sm-4"id="Photography11y"></div>
+      <div class="col-sm-4"id="Photography12y"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"id="Photography13y"></div>
+     <div class="col-sm-4"id="Photography14y"></div>
+      <div class="col-sm-4"id="Photography15y"> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">decor</div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+</div>
+<!--6-->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="catering">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Catering</p>
+            <p style="font-family: Helvetica;">"Choose From a Wide Range of Caterers To Offer an Unforgettable Dining Experience to Your Wedding Guests"</p>
+
+      <button class="option1">Find Caterers</button></div>
+       <p style="font-size:20px;margin-top: 20px;">Photographers By Region</p>
+  <button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Hyderabad</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Chennai</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Kerala</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Banglore</a></button>
+s
+  </div>
+</div>
+<div class="container">
+  <div class="row"style="margin-top: 20px;">
+    <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">zas</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">qsqs</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">sqs</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">sqsq</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">qss</div>
+      <div class="col-sm-3"id="Photography">mm,am</div>
+     <div class="col-sm-3"id="Photography">nsnan</div>
+  </div>
+</div>
+<!--7--->
+<div class="container">
+  <div class="row"style="margin-top: 30px;">
+    <div class="col-sm-9" id="pandit">
+    </div>
+     <div class="col-sm-3"style="box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);">
+      <p style="font-size:27px;color:black;">Pandit</p>
+            <p style="font-family: Helvetica;">Discover Experinced Pandits ,Who Helps to Start the New Jsourneys</p>
+
+      <button class="option1">Find Photographers</button></div>
+       <p style="font-size:20px;margin-top: 20px;">Photographers By Region</p>
+  <button class="team"><a href=""style="color: black;"><i class='fa fa-om'style="color: red">&nbsp;</i>Hinduism</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-map-marker"style="color: red">&nbsp;</i>Priests</a></button>
+<button class="team"><a href=""style="color: black;"><i class="fa fa-moon-o"style="color: red">&nbsp;</i>Maulvis</a></button>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row"style="margin-top: 20px;">
+    <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+      <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+      <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+      <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+      <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+      <div class="col-sm-3"id="Photography"></div>
+     <div class="col-sm-3"id="Photography"></div>
+  </div>
+</div>
+<!--8-->
+
+
+
+
+
+</div>
+
+
+</div></div>
+<div class="container">
+<div class="row">
+           <div class="col-sm-12"style="margin-top: 30px;">
+            <hr>
+            <p style="color:red;font-size: 30px;font-weight: bold;font-family:serif;">ATIS  -   A Tradition In Society</p>
+            <p style="color:#706f6f;font-weight: bold;">
+            ATIS  is an Indian Wedding Planning Website and app where you can find the best wedding vendors, with prices and reviews at the click of a button. Whether you are looking to hire wedding planners in India, or looking for the top photographers, or just some ideas and inspiration for your wedding. ATIS can help you solve your wedding planning woes through its unique features. With a checklist, detailed vendor list, inspiration gallery and blog - you won't need to spend hours planning a wedding anymore.
+            </p>
+           </div>
+
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"style="   ">
+         <p style="margin-top: 15px;color: #706f6f;">Contact us to get best deals</p>
+         <p style="margin-top:15px;margin-right: 15px;font-weight: bold;color: red;"><a href=""style="text-decoration: none;color: #706f6f;">Atis@Wedplan.com</a>   !   <a href=""style="text-decoration: none;color: #706f6f;">Info@atis.com</a></p>
+        <p style="color:#706f6f">+91 7894561230</p>
+        <p style="margin-top: 15px;font-weight: bold;color: #706f6f;">Get latest blog details</p>
+      <input type="Email" name="email"placeholder="Email"required=""style="border-radius: 7px;height: 40px;width: 250px;background-color: transparent;border-color: white;color: #706f6f;"><button class="em">  <a href=""style="color: white;">Submit</a></button>
+      <p>
+        <button class="ft"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;Submit Wedding</button>        <button class="ft"><i class="fa fa-users"></i>&nbsp;&nbsp;Join as Vendor</button>
+
+      </p>
+
+    </div>
+    <div class="col-sm-4"style="">
+     
+    </div>
+    <div class="col-sm-4"style="text-align: center;">
+      <img src="main2.png"style="width: 120px;height: 120px;border: 2px solid #555;border-radius: 15px;margin-top: 50px;box-shadow: 0 0 15px white;
+">
+      <p style="color:white;font-size:20px;font-family: serif;margin: 20px;">Get the ATIS app</p>
+      <a href=""> <i class="fa fa-android" aria-hidden="true"style="font-size: 50px;color: green;margin-right: 15px;"></i>
+      <a href=""> <i class="fa fa-apple" aria-hidden="true"style="font-size: 50px;color: silver;"></i>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

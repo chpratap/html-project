@@ -1,0 +1,244 @@
+body{
+  background-color: black;
+}
+
+.sidebar {
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-color: #202224;
+  border-right-style: groove;
+}
+
+.sidebar {
+  display: block;
+  color: white;
+  
+  text-decoration: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+ 
+.sidebar.active {
+  background-color: #202224;
+  color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+div.content {
+  margin-left: 160px;
+  padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar  {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar  {
+    text-align: center;
+    float: none;
+  }
+}
+.but1{
+  border-radius: 10px;
+  height:15px ;
+  margin-top: 25px;
+  width: 10px;
+  background: red;
+  float: center;
+ margin-bottom: 15px;
+ margin-left: 20px;
+}
+.but2{
+  border-radius: 10px;
+  height:15px ;
+  width: 10px;
+  background: yellow;
+  float: center;
+}
+.but3{
+  border-radius: 10px;
+  height:15px ;
+  width: 10px;
+  background: green;
+  float: center;
+}
+.but4{
+  height: 40px;
+  background-color:#141414;
+    border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  border-top: none;
+  border-left: none;
+  color: white;
+}
+.but4:hover{
+  background-color: #202224;
+}
+#head{
+  border-style: groove;
+  border-color: #141414;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+#head1{
+  margin: 10px;
+  border-radius: 10px;
+  background-color:#141414 ;
+}
+#head2{
+  margin-left: 23px;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  border-radius: 10px;
+  background-color:#141414 ;
+}
+.but5{
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 60px;
+  border-radius: 50px;
+  border-color: transparent;
+  background-color: green;
+}
+.but5a{
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 60px;
+   border-color: transparent;
+  border-radius: 50px;
+  background-color:blue;
+}
+.but5b{
+  height: 60px;
+  margin: 10px;
+  margin-left: 10px;
+  width: 60px;
+   border-color: transparent;
+  border-radius: 50px;
+  background-color: red;
+}
+.but{
+margin-top: 30px;
+}
+.but6{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 7px;
+}
+.but6:hover{
+  background-color: transparent;
+  box-shadow: 0 0 20px skyblue;
+
+}
+.but7{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+}
+.but7:hover{
+  background-color: transparent;
+  box-shadow: 0 0 20px pink;
+
+}
+
+.but8{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+}
+.but8:hover{
+  background-color: transparent;
+  box-shadow: 0 0 20px blue;
+
+}
+.but9{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+}
+.but9:hover{
+  background-color: transparent;
+  box-shadow: 0 0 20px skyblue;
+
+}
+.but10{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 25px;
+}
+.but11{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 25px;
+}
+.but12{
+  background-color:#141414 ;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 25px;
+}
+.but13{
+   height: 60px;
+  margin-left: 10px;
+  width: 60px;
+  border-color: #202224;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  border-style: groove;
+  margin-left: 25px;
+  background-color: #202224;
+
+}
+.em{
+  border-radius: 7px;
+  border-color:#3d3d3d;
+  background-color: #ad0707;
+  padding: 3px;
+  text-decoration: none;
+  height: 40px;
+  color: white;
+
+}
+.ft{
+  border-color: #051724;
+  border-style: groove;
+  color: #706f6f;
+  margin-top: 30px;
+  font-size: 14px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 150px;
+
+}
